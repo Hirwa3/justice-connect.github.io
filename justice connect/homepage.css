@@ -1,0 +1,93 @@
+/* Add your custom CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #f2f2f2;
+    padding: 10px;
+  }
+  
+  .logo {
+    /* Add logo styling */
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .hero {
+    /* Add hero section styling */
+  }
+  
+  .cta {
+    /* Add styling for the call-to-action area */
+  }
+  
+  .cta .btn {
+    background-color: #ff0000;
+    color: #ffffff;
+    font-family: 'Your Cool Handwriting Font', cursive;
+    /* Add additional button styling as desired */
+  }
+  
+  .intro {
+    /* Add styling for the introduction section */
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .feature {
+    flex-basis: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .feature h3 {
+    /* Add additional heading styling as desired */
+  }
+  
+  .feature p {
+    /* Add additional paragraph styling as desired */
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  footer ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JusticeConnect - American Express Payment</title>
+  <link rel="icon" href="justicelogo.png" width="100px" height="100px" type="image/x-icon"></a>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #header {
+      background-color: #000000;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    
+    #payment-form {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    
+    button[type="submit"] {
+      background-color: #ff0000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    footer {
+      background-color: #000000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .footer-logo {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <a href="landing page.html"><img src="justicelogo.png" width="200px" height="200px"></a>
+    <h1>JusticeConnect</h1>
+  </div>
+  <div id="payment-form">
+    <h2>American Express Payment</h2>
+    <form action="process_payment.php" method="post">
+      <label for="card-number">Card Number</label>
+      <input type="text" id="card-number" name="card-number" required>
+      
+      <label for="expiry-date">Expiry Date</label>
+      <input type="text" id="expiry-date" name="expiry-date" required>
+      
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" name="cvv" required>
+      
+      <button type="submit">Pay Now</button>
+    </form>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <img src="inspire logo.png" alt="Logo" width="80px" height="80px">
+      <div class="footer-title">Powered and Designed by Inspireworks.inc © 2023</div>
+      <div class="footer-logo">
+        
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

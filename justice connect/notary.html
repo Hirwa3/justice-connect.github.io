@@ -1,0 +1,178 @@
+<DOCTYPE html>
+<html>
+<head>
+  <title>Hire Private Notaries</title>
+  <link rel="icon" href="justicelogo.png" width="100px" height="100px" type="image/x-icon"></a>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #000000;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .notary-card {
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      transition: transform 0.3s ease;
+    }
+    
+    .notary-card:hover {
+      transform: scale(1.10);
+    }
+    
+    .notary-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    
+    .notary-card h3 {
+      margin: 0;
+    }
+    
+    .rating {
+      display: inline-block;
+      font-size: 24px;
+      color: #ffcc00;
+      cursor: pointer;
+    }
+    
+    .rating .star {
+      display: inline-block;
+      margin-right: 5px;
+    }
+    
+    .rating .star:hover,
+    .rating .star.filled {
+      color: #ffcc00;
+    }
+    
+    footer {
+      background-color: #000000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    button[type="submit"] {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+  </style>
+  <script>
+    // JavaScript code
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const ratings = document.querySelectorAll('.rating');
+      
+      ratings.forEach((rating) => {
+        const stars = rating.querySelectorAll('.star');
+        
+        stars.forEach((star, index) => {
+          star.addEventListener('click', () => {
+            resetStars(rating);
+            fillStars(stars, index);
+          });
+        });
+      });
+    });
+    
+    function resetStars(rating) {
+      const stars = rating.querySelectorAll('.star');
+      
+      stars.forEach((star) => {
+        star.classList.remove('filled');
+      });
+    }
+    
+    function fillStars(stars, index) {
+      for (let i = 0; i <= index; i++) {
+        stars[i].classList.add('filled');
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <a href="landing page.html"><img src="justicelogo.png" width="200px" height="200px"></a>
+    <h1>JusticeConnect</h1>
+    <h1>Hire Private Notaries</h1>
+  </header>
+  
+  <div class="container">
+    <div class="notary-card">
+      <img src="notary 1.jpeg" alt="Notary 1">
+      <div>
+        <h3>Emmanuel Ngarambe</h3>
+        <p>Private Notary</p>
+        <p>Rwanda</p>
+        
+        <div class="rating">
+          <span class="star">&#9734;</span>
+          <span class="star">&#9734;</span>
+          <span class="star">&#9734;</span>
+          <span class="star">&#9734;</span>
+          <span class="star">&#9734;</span>
+          <a href = "chat.html"><button type="submit">Chat</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="notary-card">
+      <img src="notary 2.webp" alt="Notary 2">
+      <div>
+        <h3>Emily Johnson</h3>
+        <p>Certified Notary Public</p>
+        <p>Canada</p>
+        <div class="rating">
+          <span class="star">&#9734;</span>
+          <span class="star">&#9734;</span>
+          <span class="star">&#9734;</span>
+          <span class="star">&#9734;</span>
+          <span class="star">&#9734;</span>
+          <a href = "chat.html"><button type="submit">Chat</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Add more notary cards as needed -->
+  </div>
+  
+  <!-- Add more sections or elements as needed -->
+  
+  <footer>
+    <div class="footer-logo">
+      <img src="inspire logo.png" alt="inspireworks Logo" width="100" height="100">
+    </div>
+    <p>Powered and Designed by Inspireworks.inc © 2023</p>
+  </footer>
+</body>
+</html>

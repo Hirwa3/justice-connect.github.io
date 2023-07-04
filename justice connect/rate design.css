@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-text {
+  color: white;
+}
+
+.rating-container {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.rating-stars {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.star {
+  cursor: pointer;
+}
+
+.star.gold {
+  color: gold;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.logo-button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
